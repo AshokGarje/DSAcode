@@ -1,60 +1,92 @@
 #include<iostream>
+#include<math.h>
+#include<string>
 #include<vector>
 using namespace std;
 
-// void selection_sort(vector<int>& nums){
-//   for(int i =0;i<nums.size()-1;i++){
-//     int min_Index = i;
-//     for(int j =i+1;j<nums.size();j++){
-//       if(nums[j]<nums[min_Index]){
-//         min_Index = j;
-//       }
+// bool CheckPrime(int n){
+//     if(n<=1){
+//         return 0;
 //     }
-//     swap(nums[i],nums[min_Index]);
-//   }
+//     for(int i = 2; i<=sqrt(n);i++){
+//         if(n%i == 0){
+//             return 0;            
+//         }
+//     }
+//     return 1;
 // }
 
 
-// void Insertion_sort(vector<int> &nums)
-// {
-//   int i, key;
-//   for (i = 1; i < nums.size(); i++)
-//   {
-//     int j = i-1;
-//     int key = nums[i];
-//     while(j>=0 && nums[j]>key){
-//       nums[j+1] = nums[j];
-//       j = j - 1;
+// bool Checkpalindrome(string s){
+//     int start = 0;
+//     int end = s.length()-1;
+//     while(start<=end){
+//         if(s[start] == s[end]){
+//             start++;
+//             end--;
+//         }
+//         else{
+//             return false;
+//         }
 //     }
-//     nums[j+1] = key;
-//   }
+//     return true;
+// }
+
+// int ReverseNumber(int n){
+//     int ans = 0;
+//     int digit;
+//     while(n!=0){
+//         digit = n%10;
+//         ans = ans * 10 + digit;
+//         n = n/10;
+//     }
+//     return ans;
 // }
 
 
-void bubble_sort(vector<int>& nums){
-  for(int i=0;i<nums.size()-1;i++){
-    for(int j =0;j<nums.size()-i-1;j++){
-      if(nums[j]>nums[j+1]){
-        swap(nums[j],nums[j+1]);
-      }
-      
-    }
-  }
-}
+// long long int Factorial(int n){
+//     if(n==1 || n==0){
+//         return 1;
+//     }
+//     return n * Factorial(n-1);
+// }
 
-
-void linear_search(vector<int>& nums){
-
-}
+// void MergeTwoSortedArray(vector<int>& arr1, vector<int>& arr2){
+//     arr1.insert(arr1.end(), arr2.begin(), arr2.end());
+//     for(int i =0;i<arr1.size()-1;i++){
+//         for(int j = 0;j<arr1.size()-1-i;j++){
+//             if(arr1[j]>arr1[j+1]){
+//                 swap(arr1[j],arr1[j+1]);
+//             }
+//         }
+//     }
+//     for(int i=0;i<arr1.size();i++){
+//         cout<<arr1[i]<<" ";
+//     }
+// }
 int main()
 {
-  vector<int> nums = {2,34,54,1,78,33};
-  // selection_sort(nums);
-  // Insertion_sort(nums);
-  bubble_sort(nums);
-  for (int num : nums)
-  {
-    cout << num << " ";
-  }
-  return 0;
+    // int n;
+    // cin>>n;
+    // string s;
+    // cin>>s;
+
+    //cout<<CheckPrime(n);
+
+    // cout<<Checkpalindrome(s);
+
+    // int ans = ReverseNumber(n);
+    // if(n == ans){
+    //     cout<<"Number is palindrome."<<endl;
+    // }
+    // else{
+    //     cout<<"Number is not palindrome."<<endl;
+    // }
+
+    // cout<<Factorial(n);
+
+    // vector<int> vector1 = {1, 3, 5};
+    // vector<int> vector2 = {2, 4, 6};
+    // MergeTwoSortedArray(vector1, vector2);
+    return 0;
 }
