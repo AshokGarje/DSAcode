@@ -16,6 +16,8 @@ vector<int> merge(vector<int>arr1,vector<int>arr2,vector<int>arr3){
             k++;
         }
     }
+
+
     // while(i<arr1.size()){
     //     arr3[k] = arr1[i];
     //     i++;

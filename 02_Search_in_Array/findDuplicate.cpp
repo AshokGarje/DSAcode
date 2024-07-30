@@ -10,8 +10,18 @@ int findduplicate(int a[],int n){
     }
     return ans;
 }
+// int findduplicate(int arr[],int n){
+//     for(int i=0;i<n;i++){
+//         for(int j=i+1;j<n;j++){
+//             if(arr[i] == arr[j]){
+//                 return arr[i];
+//             }
+//         }
+//     }
+//     return -1;
+// }
 int main(){
-    int a[6] = {4,2,1,3,4};
-    cout<<findduplicate(a,5);
+    int a[10] = {4,2,1,3,3,6,8};
+    cout<<findduplicate(a,7);
    
 }
